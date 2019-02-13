@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+}
+
+footer {
+  font-size: 12px;
+}
+
+.quiz-body {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 7px;
+}

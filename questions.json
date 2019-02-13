@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "questionName": "Question 1",
+      "question": "Objectively speaking, which one of these is superior to the other?",
+      "choices": [
+        "Chocolate chip cookie", "Thin Mints", "Oreos", "Nutter Butter"
+      ],
+      "answer": "Thin Mints",
+      "correctResponse": "Correct! Of the four, Thin Mints are objectively better. It has been scientifically proven that consuming an average of 12 boxes of Thin Mints every other paycheck can extend a person's life expectancy by at least one more paycheck.",
+      "incorrectResponse": "Oh no! That's not quite right!<br /> The correct answer is Thin Mints. <br />Now I could either tell you why that's the correct answer, or you could just trust me and order yourself a crate of those glorious discs."
+    },
+    {
+      "questionName": "Question 2",
+      "question": "A man walks up to you and gives you the choice to save one of these four from being erased from existence. Which one do you pick?",
+      "choices": [
+        "Desserts", "Guard rails", "The color green", "The Common Cold"
+      ],
+      "answer": "Guard rails",
+      "correctResponse": "Nice job! Look at you acting selflessly for the sake of humankind! Guard rails, while not as edible as desserts or as beautiful as the color green, protect thousands upon thousands of people yearly from falling unto their untimely demise. Your selfless act has just saved all those people who natural selection has chosen to weed out. Good going!",
+      "incorrectResponse": "You missed the ticket there, poncho bronco. The correct answer is Guard rails. If those suckers ever stopped existing it could quite literally be raining men."
+    },
+    {
+      "questionName": "Question 3",
+      "question": "Pick 'Choice Two'. Any other choice will be wrong.",
+      "choices": [
+        "Choice One", "Choice Two", "Choice Three", "Choice Four"
+      ],
+      "answer": "Choice Two",
+      "correctResponse": "What did I tell you? There's no reason why I would lie to you. That's just uncivilized. Society has been built on the foundation of trust and I for one will continue to lay those foundations till the day I die.",
+      "incorrectResponse": "Really? That's how much distrust you have in your bones? I told you the right answer and you went and decided that you knew better. Go figure. Well off to the next question you go. Hopefully you do better on that one."
+    },
+    {
+      "questionName": "Question 4",
+      "question": "Here we are again. Pick 'Choice Two' again. If you pick 'Choice One' it'll definitely be wrong and if you pick 'Choice Three' you might as well just give up now.",
+      "choices": [
+        "Choice One", "Choice Two", "Choice Three", "Choice Four"
+      ],
+      "answer": "Choice Four",
+      "correctResponse": "Well obviously I'd have to throw a curve ball in there once in a while or else it starts becoming disinteresting. That being said, I won't lie. I'm slightly hurt that you didn't trust me. C'est la vie. I'll get the next one.",
+      "incorrectResponse": "Yeah there's no sugar coating your choice. That was the wrong one. Let's just move on then, shall we?"
+    },
+    {
+      "questionName": "Question 5",
+      "question": "We're at the end of our little journey together so I thought I'd give you an easy one:<br />What is 1 + 1?",
+      "choices": [
+        "2", "Two", "1 + 1", "Pick me!"
+      ],
+      "answer": "2",
+      "correctResponse": "Plain and simple right? It's just basic arithmatic.",
+      "incorrectResponse": "1 + 1 = 2...<br />I... I don't know what to tell you..."
+    }
+  ]
+}
