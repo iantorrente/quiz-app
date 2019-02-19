@@ -1,3 +1,15 @@
+/*
+  +1) Need a front page with a button that moves onto the quiz
+  +2) Need to render the quiz (probably an array of the items and questions)
+  -3) Each question should have an id
+  +4) Create file for questions
+  +5) Import file into STORE.questionsArray
+  +6) Handle the choosing of the radio buttons
+  +7) Compare the user's choice to the correct answer
+  +8) Output the text for the outcome
+  Render flow:
+  Question -> Text answer -> Next question -> repeat
+*/
 'use strict';
 
 const STORE = {
@@ -72,14 +84,23 @@ function renderQuiz() {
   $('.quiz-body').append(
     `<div class="question-body">
       <form class="question-form">
-        <label class="question-label">
-          ${STORE.questionsArray[STORE.questionNumber].question}
+        <legend class="question-legend">
+          <h3>${STORE.questionsArray[STORE.questionNumber].question}</h3>
+        </legend><br /><hr />
+        <label>
+          <input type="radio" name="question-choice" value="${STORE.questionsArray[STORE.questionNumber].choices[0]}">${STORE.questionsArray[STORE.questionNumber].choices[0]}</input>
         </label><br />
-        <input type="radio" name="question-choice" value="${STORE.questionsArray[STORE.questionNumber].choices[0]}">${STORE.questionsArray[STORE.questionNumber].choices[0]}</input><br />
-        <input type="radio" name="question-choice" value="${STORE.questionsArray[STORE.questionNumber].choices[1]}">${STORE.questionsArray[STORE.questionNumber].choices[1]}</input><br />
-        <input type="radio" name="question-choice" value="${STORE.questionsArray[STORE.questionNumber].choices[2]}">${STORE.questionsArray[STORE.questionNumber].choices[2]}</input><br />
-        <input type="radio" name="question-choice" value="${STORE.questionsArray[STORE.questionNumber].choices[3]}">${STORE.questionsArray[STORE.questionNumber].choices[3]}</input><br />
+        <label>
+          <input type="radio" name="question-choice" value="${STORE.questionsArray[STORE.questionNumber].choices[1]}">${STORE.questionsArray[STORE.questionNumber].choices[1]}</input>
+        </label><br />
+        <label>
+          <input type="radio" name="question-choice" value="${STORE.questionsArray[STORE.questionNumber].choices[2]}">${STORE.questionsArray[STORE.questionNumber].choices[2]}</input>
+        </label><br />
+        <label>
+          <input type="radio" name="question-choice" value="${STORE.questionsArray[STORE.questionNumber].choices[3]}">${STORE.questionsArray[STORE.questionNumber].choices[3]}</input>
+        </label><br />
       </form>
+      <span class="submission-warning"></span>
       <button class="submit-btn">Submit</button>
     </div>`
   );
@@ -91,7 +112,10 @@ function handleQuestionResults() {
     if (STORE.choice != "") {
       renderQuestionResults();
     } else {
-      alert("You must choose one");
+      if ($('.submission-warning-text')) {
+        $('.submission-warning-text').remove();
+      }
+      $('.submission-warning').append(`<p class="submission-warning-text">You must make a choice!</p>`)
     }
   });
 }
@@ -105,7 +129,7 @@ function renderQuestionResults() {
     $('.quiz-body').append(
       `<div class="answer-body">
         <h1>CORRECT</h1>
-        <p>${STORE.questionsArray[STORE.questionNumber].correctResponse}</p>
+        <p>${STORE.questionsArray[STORE.questionNumber].correctResponse}</p><hr />
         <button class="next-question-btn">Next Question</button>
       </div>`
     );
@@ -113,7 +137,7 @@ function renderQuestionResults() {
     $('.quiz-body').append(
     `<div class="answer-body">
         <h1>INCORRECT</h1>
-        <p>${STORE.questionsArray[STORE.questionNumber].incorrectResponse}</p>
+        <p>${STORE.questionsArray[STORE.questionNumber].incorrectResponse}</p><hr />
         <button class="next-question-btn">Next Question</button>
       </div>`
     );
