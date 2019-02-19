@@ -1,15 +1,3 @@
-/*
-  +1) Need a front page with a button that moves onto the quiz
-  +2) Need to render the quiz (probably an array of the items and questions)
-  -3) Each question should have an id
-  +4) Create file for questions
-  +5) Import file into STORE.questionsArray
-  +6) Handle the choosing of the radio buttons
-  +7) Compare the user's choice to the correct answer
-  +8) Output the text for the outcome
-  Render flow:
-  Question -> Text answer -> Next question -> repeat
-*/
 'use strict';
 
 const STORE = {
