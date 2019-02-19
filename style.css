@@ -1,13 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  background-color: rgba(128, 128, 128, 0.349);
   text-align: center;
+  font-size: 18px;
+}
+
+main {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 2%;
 }
 
 footer {
   font-size: 12px;
 }
 
+button {
+  width: 25%;
+  height: 50px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  margin: 2%;
+}
+
+button:hover {
+  background-color: rgb(212, 138, 0);
+  cursor: pointer;
+}
+
+input {
+  background-color: white;
+  font-size: 16px;
+  margin: 1%;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+label {
+  background-color: orange;
+  border-radius: 5px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  width: 90%;
+  height: 50px;
+}
+
+label:hover {
+  background-color: rgb(212, 138, 0);
+  cursor: pointer;
+}
+
 .quiz-body {
+  background-color: white;
   padding: 5px;
-  border: 1px solid black;
   border-radius: 7px;
+}
+
+.question-legend {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.submission-warning-text {
+  color: red;
+}
+
+@media only screen and (max-width: 320px) {
+  main {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+  }
+
+  button {
+    width: 90%;
+    height: 50px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    margin: 2%;
+  }
 }
