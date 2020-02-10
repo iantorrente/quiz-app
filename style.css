@@ -1,12 +1,15 @@
 * {
   box-sizing: border-box;
-}
-
-body {
   background-color: rgba(128, 128, 128, 0.349);
   text-align: center;
   font-size: 18px;
 }
+
+/* body {
+  background-color: rgba(128, 128, 128, 0.349);
+  text-align: center;
+  font-size: 18px;
+} */
 
 main {
   margin-right: auto;
