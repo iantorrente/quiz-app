@@ -4,9 +4,10 @@
 
 html, body {
   background-color: rgba(128, 128, 128, 0.349);
+  text-align: center;
+  height: 100%;
   margin: 0px;
   padding: 0px;
-  text-align: center;
   font-size: 18px;
 }
 
